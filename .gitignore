@@ -1,0 +1,5 @@
+.nyc_output
+.scannerwork
+.idea
+.vscode
+node_modules

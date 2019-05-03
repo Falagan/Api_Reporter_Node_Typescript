@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.0",
+  "x-api-id": "api_reporter_node_ts",
+  "info": {
+    "version": "1.0.0",
+    "title": "Api_Reporter_Node_Ts",
+    "license": {
+      "name": "ISC"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3001"
+    }
+  ],
+  "paths": {
+    "/login": {
+      "get": {
+        "description": "Se encarga de la autentificación de usuarios",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          }
+        }
+      }
+    },
+    "/users": {
+      "get": {
+        "description": "Se encarga de la autentificación de usuarios",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          }
+        }
+      }
+    }
+  }
+}
