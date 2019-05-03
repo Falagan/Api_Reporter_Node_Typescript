@@ -2,7 +2,7 @@
 
 Definicion del entorno de desarrollo del proyecto.
 
-# 1 Soporte TS y autoarranque con nodemon.
+# 1 -  Soporte TS y autoarranque con nodemon.
 
 ## 1.1 - Soporte para typescript.
 
@@ -19,11 +19,11 @@ Definicion del entorno de desarrollo del proyecto.
     y configuramos el script de arranque "start": "nodemon ts-node ./lib/server.ts",
 
 
-# 2 Documentación del Código
+# 2 - Documentación del Código
 
-## 1.1 Documentación de la Api con Swagger
+## 2.1 Documentación de la Api con Swagger
 
-### 1.1.1 OAS
+### 2.1.1 OAS
 
 Instalacion del paquete oas, que permite comnetar el codigo y generar por consola
 un json de open api specification que será copiado al archivo oas.json, el cual
@@ -34,7 +34,7 @@ utilizará swagger ui express para actualizar la documantacion del api.
 > oas generate . Comando que genera el oas.json en consola.
 
 
-### 1.1.2 Swagger Ui Express
+### 2.1.2 Swagger Ui Express
 
 Paquete que incluye swagger para node y express con la opción para lanzar
 un interfaz grafico con la documentación de la api creada con OAS.
@@ -47,9 +47,9 @@ para ver la doc en la routa api-docs. (Consultar codigo proyecto).
 Cuando levantamos el proyecto ya tenemos disponible la doc.
 
 
-# 2 Test
+# 3 - Test
 
-## 1.1 Mocha, Chai y Nyc
+## 3.1 Mocha, Chai y Nyc
 
 Instalamos el paquete de chai, mocha y mocha http para generar nuestros test
 con soporte en typescript.
@@ -89,7 +89,7 @@ Añadimos la configuracion de nyc al package.json
   },
 
 
-# 3 Control de Calidad
+# 3 - Control de Calidad
 
 Instalamos el servidor de sonarqube y levantamos el mismo ejecutando el 
 archivo StartSonar situado en la carpeta bin del servidor sonarqube.
@@ -205,5 +205,5 @@ package.json en este momento:
 
 
 
-# 3 Integración continua con travis-c o Jenkins
+# 4 - Integración continua con travis-c o Jenkins
 
