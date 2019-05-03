@@ -1,8 +1,8 @@
-_API con Node y Typescript
+#### _API con Node y Typescript
 
 Definicion del entorno de desarrollo del proyecto.
 
-# 1 SOPORTE TYPESCRIPT Y AUTOARRANQUE CON NODEMON
+# 1 Soporte TS y autoarranque con nodemon.
 
 ## 1.1 - Soporte para typescript.
 
@@ -18,7 +18,8 @@ Definicion del entorno de desarrollo del proyecto.
     > npm install nodemon
     y configuramos el script de arranque "start": "nodemon ts-node ./lib/server.ts",
 
-# 2 DOCUMENTACION DEL CODIGO
+
+# 2 Documentación del Código
 
 ## 1.1 Documentación de la Api con Swagger
 
@@ -46,7 +47,7 @@ para ver la doc en la routa api-docs. (Consultar codigo proyecto).
 Cuando levantamos el proyecto ya tenemos disponible la doc.
 
 
-# 2 TEST
+# 2 Test
 
 ## 1.1 Mocha, Chai y Nyc
 
@@ -88,7 +89,7 @@ Añadimos la configuracion de nyc al package.json
   },
 
 
-# 3 CONTROL DE CALIDAD DEL CÓDIGO
+# 3 Control de Calidad
 
 Instalamos el servidor de sonarqube y levantamos el mismo ejecutando el 
 archivo StartSonar situado en la carpeta bin del servidor sonarqube.
@@ -204,5 +205,5 @@ package.json en este momento:
 
 
 
-# 3 INTEGRACIÓN CONTINUA CON TRAVIS-C O JENKINGS
+# 3 Integración continua con travis-c o Jenkins
 
