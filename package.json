@@ -48,13 +48,13 @@
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.16.1",
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "^5.4.9",
     "oas": "^0.8.13",
     "swagger-ui-express": "^4.0.2",
     "ts-node": "^8.0.2",
-    "bcrypt": "^3.0.6",
     "typescript": "^3.4.5"
   },
   "devDependencies": {
