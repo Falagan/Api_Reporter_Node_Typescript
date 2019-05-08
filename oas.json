@@ -3,7 +3,7 @@
   "x-api-id": "api_reporter_node_ts",
   "info": {
     "version": "1.0.0",
-    "title": "Api_Reporter_Node_Ts",
+    "title": "Api Reporter ( Node + TS )",
     "license": {
       "name": "ISC"
     }
@@ -17,6 +17,7 @@
     "/login": {
       "get": {
         "description": "Se encarga de la gestión del proceso de login.",
+        "tags": "login",
         "responses": {
           "200": {
             "description": "Successful response"

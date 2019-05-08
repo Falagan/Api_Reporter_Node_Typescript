@@ -6,10 +6,13 @@ const controller = new LoginController();
 const loginRoutes = express.Router();
 
 loginRoutes
-  /*
-   * @oas [get] /login
-   * description: Se encarga de la gestión del proceso de login.
-   */
+/* @oas [post] /login Autentifica a un usuario
+ * description: "Autentifica o un usuario."
+ * tags:
+ *  -login
+ * parameters:
+ * - (body) Id {String} Id de usuario.
+ */
   .post( "/",controller.auth)
   
 export = loginRoutes;
