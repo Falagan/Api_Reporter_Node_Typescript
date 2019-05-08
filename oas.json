@@ -16,7 +16,7 @@
   "paths": {
     "/login": {
       "get": {
-        "description": "Se encarga de la autentificación de usuarios",
+        "description": "Se encarga de la gestión del proceso de login.",
         "responses": {
           "200": {
             "description": "Successful response"
