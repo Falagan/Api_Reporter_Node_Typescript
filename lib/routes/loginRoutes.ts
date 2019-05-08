@@ -11,7 +11,8 @@ loginRoutes
  * tags:
  * - login
  * parameters:
- * - (body) Id {String} Id de usuario.
+ * - (body) id {String} Id de usuario.
+ * - (body) pass {String} contraseña de usuario.
  * responses:
  *  "200":
  *    description: "Usuario encontrado, Status OK / Usuario no encontrado, Status KO."

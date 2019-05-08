@@ -38,9 +38,13 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "Id": {
+                  "id": {
                     "type": "string",
                     "description": "Id de usuario."
+                  },
+                  "pass": {
+                    "type": "string",
+                    "description": "contraseña de usuario."
                   }
                 }
               }
