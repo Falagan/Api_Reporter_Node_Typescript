@@ -15,22 +15,31 @@
   ],
   "paths": {
     "/login": {
-      "get": {
-        "description": "Se encarga de la gestión del proceso de login.",
-        "tags": "login",
+      "post": {
+        "summary": "Autentifica a un usuario",
+        "description": "Autentifica o un usuario.",
+        "tags": [
+          "login"
+        ],
+        "parameters": [],
         "responses": {
           "200": {
-            "description": "Successful response"
+            "description": "Usuario encontrado, Status OK / Usuario no encontrado, Status KO."
           }
-        }
-      }
-    },
-    "/users": {
-      "get": {
-        "description": "Se encarga de la autentificación de usuarios",
-        "responses": {
-          "200": {
-            "description": "Successful response"
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string",
+                    "description": "Id de usuario."
+                  }
+                }
+              }
+            }
           }
         }
       }

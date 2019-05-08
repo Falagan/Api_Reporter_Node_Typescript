@@ -9,9 +9,12 @@ loginRoutes
 /* @oas [post] /login Autentifica a un usuario
  * description: "Autentifica o un usuario."
  * tags:
- *  -login
+ * - login
  * parameters:
  * - (body) Id {String} Id de usuario.
+ * responses:
+ *  "200":
+ *    description: "Usuario encontrado, Status OK / Usuario no encontrado, Status KO."
  */
   .post( "/",controller.auth)
   
