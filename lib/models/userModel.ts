@@ -3,7 +3,7 @@ import * as mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-    userName: {
+    id: {
         type: String
     },
     password: {
@@ -20,4 +20,4 @@ const userSchema = new Schema({
     }
 });
 
-export const User = mongoose.model('User', userSchema, 'Users');
+export const User = mongoose.model('User', userSchema, 'User');
