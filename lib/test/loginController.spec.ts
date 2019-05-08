@@ -1,13 +1,13 @@
 import { expect } from "chai";
 import { loginController} from '../controllers/loginController';
 
-describe('Primer Test', ()=>{
+describe('Login Controller T', ()=>{
+
+    let lc = new loginController();
 
     it('Test', ()=>{
-        expect(new loginController().test()).to.equal('Vamos');
+        expect(lc.test()).to.be.equal('Test');
     })
 
-    it('Test 2', ()=>{
-        expect(new loginController().test2()).to.equal('Vamos');
-    })
+
 })

@@ -40,6 +40,7 @@
     "start": "nodemon ./lib/server.ts",
     "prod": "npm run build && npm run start",
     "test": "nyc mocha --require ts-node/register lib/test/*.ts",
+    "tslintRepo": "tslint -t json -o report.json --project tsconfig.json",
     "sonar": "sonar-scanner",
     "updateSwagger": "oas generate --pretty >%userprofile%/desktop/info.json"
   },

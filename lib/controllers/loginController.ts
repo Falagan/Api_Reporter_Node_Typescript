@@ -1,17 +1,8 @@
 import { User } from "../models/userModel";
-const bcrypt = require("bcrypt");
+import { bcrypt } from "bcrypt";
 
-export class loginController {
-  /**Autentificacion de un usuario*/
-  public test(){
-    return 'Vamos';
-  }
+export class LoginController {
 
-  /**Autentificacion de un usuario*/
-  public test2(){
-    return 'Vamos';
-  }
-  
   public auth(req, res) {
     User.findOne({ userName: req.body.Id }, (err, user) => {
       //Error consulta
@@ -28,7 +19,7 @@ export class loginController {
           msg: "Usuario no encontrado."
         });
       }
-      //Usuario o contraseña incorectos
+      //Usuario o contraseña incorrectos
       if (!bcrypt.compareSync(req.body.pass, user.password)) {
         return res.status(200).json({
           status: "KO",
@@ -43,5 +34,10 @@ export class loginController {
         user
       });
     });
+  }
+
+  /**Prueba de Test*/
+  public test(){
+    return 'Test';
   }
 }

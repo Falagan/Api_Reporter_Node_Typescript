@@ -1,15 +1,21 @@
 import * as express from "express";
-import { usersController } from "../controllers/usersController";
+import { UsersController } from "../controllers/usersController";
 
-let controller = new usersController();
+const controller = new UsersController();
 
-let userRoutes = express.Router();
+const userRoutes = express.Router();
 
 userRoutes
   /*
-   * @oas [get] /users
-   * description: Se encarga de la autentificación de usuarios
+   * @oas [get] /users/auth
+   * description: Se encarga de la autentificación de un usuario.
+   * responses:
+   *   "200":
+   *     description: "Usuario autentificado."
+   *     schema:
+   *       type: "JSON"
+   *       items: "$ref": "#/models/userModel"
    */
-  .post( "/",controller.create)
-  
+  .post("/auth", controller.create)
+
 export = userRoutes;

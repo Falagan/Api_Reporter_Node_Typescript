@@ -1,14 +1,14 @@
 import * as express from "express";
-import {loginController} from "../controllers/loginController";
+import {LoginController} from "../controllers/loginController";
 
-let controller = new loginController();
+const controller = new LoginController();
 
-let loginRoutes = express.Router();
+const loginRoutes = express.Router();
 
 loginRoutes
   /*
    * @oas [get] /login
-   * description: Se encarga de la autentificación de usuarios
+   * description: Se encarga de la gestión del proceso de login.
    */
   .post( "/",controller.auth)
   
