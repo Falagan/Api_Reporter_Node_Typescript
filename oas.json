@@ -2,10 +2,15 @@
   "openapi": "3.0.0",
   "x-api-id": "api_reporter_node_ts",
   "info": {
+    "description": "Api rest para la aplicacion Reporter.",
     "version": "1.0.0",
-    "title": "Api Reporter ( Node + TS )",
+    "title": "Api Reporter ( Node + TS ).",
+    "contact": {
+      "email": "ep.falagan@gmail.com"
+    },
     "license": {
-      "name": "ISC"
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
   "servers": [
