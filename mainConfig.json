@@ -1,7 +1,25 @@
 {
-  "db": {
-    "mongoDB": {
-      "url": "mongodb://localhost:27017/Reporter"
+  "dev": {
+    "db": {
+      "mongoDB": {
+        "url": "mongodb://localhost:27017/Reporter"
+      }
     }
+  },
+  "test": {
+    "db": {
+      "mongoDB": {
+        "url": "mongodb://localhost:27017/Reporter"
+      }
+    }
+
+  },
+  "prod": {
+    "db": {
+      "mongoDB": {
+        "url": "mongodb://localhost:27017/Reporter"
+      }
+    }
+
   }
 }

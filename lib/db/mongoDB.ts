@@ -1,6 +1,7 @@
 import * as mongoose from 'mongoose';
 const config = require ( '../../mainConfig.json' );
-const mongoUrl = config.db.mongoDB.url;
+const env = process.env.NODE_ENV || 'dev';
+const mongoUrl = config[env].db.mongoDB.url;
 
 class MongoDb {
   public mongoSetup(): void {
