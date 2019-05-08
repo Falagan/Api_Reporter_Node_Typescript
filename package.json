@@ -54,8 +54,7 @@
     "mongoose": "^5.4.9",
     "oas": "^0.8.13",
     "swagger-ui-express": "^4.0.2",
-    "ts-node": "^8.0.2",
-    "typescript-rest": "^1.8.1"
+    "ts-node": "^8.0.2"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
