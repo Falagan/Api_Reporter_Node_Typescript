@@ -4,7 +4,7 @@ import { bcrypt } from "bcrypt";
 export class LoginController {
 
   public auth(req, res) {
-    User.findOne({ userName: req.body.Id }, (err, user) => {
+    User.findOne({ id: req.body.Id }, (err, user) => {
       //Error consulta
       if (err) {
         return res.status(404).json({
