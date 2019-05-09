@@ -1,5 +1,6 @@
 import app from './app';
-const PORT = 3001;
+const config = require ( '../../mainConfig.json' );
+const PORT = process.env.PORT || 3001;
 
 //Inicio Server
  app.listen(PORT, () => {
