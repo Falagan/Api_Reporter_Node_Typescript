@@ -6,4 +6,4 @@ deploy:
   api_key:
     secure: "56a9aa89-1884-4e3b-8126-6c1fa8e4c7fe"
   app: 
-    on: master
+    master: apireporternode
