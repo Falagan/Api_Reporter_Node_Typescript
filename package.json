@@ -17,7 +17,7 @@
       "lib/test/coverage"
     ],
     "reporter": [
-      "lcov",
+      "lcovonly",
       "text-summary"
     ],
     "report-dir": "lib/test/coverage"
