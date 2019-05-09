@@ -5,3 +5,6 @@
 node_modules
 package-lock.json
 dist
+/lib/test/coverage/lcov-report
+/lib/test/coverage/lcov-report/base.css
+/lib/test/coverage/lcov-report/index.html

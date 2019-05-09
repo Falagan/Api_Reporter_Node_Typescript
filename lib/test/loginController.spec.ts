@@ -1,9 +1,9 @@
 import { expect } from "chai";
-import { loginController} from '../controllers/loginController';
+import { LoginController} from '../controllers/loginController';
 
 describe('Login Controller T', ()=>{
 
-    let lc = new loginController();
+    let lc = new LoginController();
 
     it('Test', ()=>{
         expect(lc.test()).to.be.equal('Test');

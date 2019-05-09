@@ -12,7 +12,9 @@
       "lib/**/*.ts"
     ],
     "exclude": [
-      "lib/**/**.spec.ts"
+      "lib/**/**.spec.ts",
+      "dist",
+      "lib/test/coverage"
     ],
     "reporter": [
       "lcov",
