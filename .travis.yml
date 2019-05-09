@@ -1,6 +1,4 @@
 language: node_js
-rvm:
-  - 10.15.3
 deploy:
   provider: heroku
   api_key:
