@@ -1,5 +1,5 @@
 {
-  "name": "nodejsts",
+  "name": "apireporternode",
   "version": "1.0.0",
   "description": "Api for Reporter in Node and typescript",
   "nyc": {
